@@ -1,0 +1,23 @@
+{
+  "status": "UNVERIFIED_TEMPLATE",
+  "source_url": "https://huggingface.co/datasets/uitnlp/vihsd",
+  "official_repository": "https://github.com/sonlam1102/vihsd",
+  "revision": null,
+  "downloaded_at_utc": null,
+  "license_and_terms_reviewed": false,
+  "access_approved": false,
+  "schema": null,
+  "label_id_mapping": null,
+  "official_splits": {
+    "train": null,
+    "dev": null,
+    "test": null
+  },
+  "preprocessing": null,
+  "duplicates_report": null,
+  "leakage_report": null,
+  "limitations": [
+    "Do not assume column names, split counts or integer label IDs.",
+    "Raw data and user identifiers must remain outside Git."
+  ]
+}

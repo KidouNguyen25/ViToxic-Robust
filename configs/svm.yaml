@@ -1,0 +1,16 @@
+# Planned baseline config; not yet consumed by a training command.
+# Do not train on the test split.
+model: tfidf_linear_svm
+seed: 42
+features:
+  word_ngram_range: [1, 2]
+  char_analyzer: char_wb
+  char_ngram_range: [2, 5]
+classifier:
+  type: LinearSVC
+  class_weight_options: [null, balanced]  # choose on dev only
+data:
+  source: uitnlp/vihsd
+  revision: null  # verify from official source
+  split_mapping: null  # verify train/dev/test before use
+  label_id_mapping: null  # verify actual integer IDs before use

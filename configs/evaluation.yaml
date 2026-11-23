@@ -1,0 +1,7 @@
+# Planned multi-model evaluation config; currently CLI accepts CSV paths directly.
+labels: [CLEAN, OFFENSIVE, HATE]
+primary_metric: macro_f1
+secondary_metrics: [accuracy, per_class_precision, per_class_recall, per_class_f1, hate_recall, confusion_matrix]
+required_prediction_columns: [example_id, gold_label, predicted_label, model_name, split, seed]
+strict_reference_membership: true
+keep_benchmark_robustness_temporal_separate: true
